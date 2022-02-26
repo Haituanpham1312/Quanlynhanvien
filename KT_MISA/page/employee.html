@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhân viên</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/page/employee.css">
+</head>
+
+<body>
+    <div class="h-navbar">
+        <div class="h-logo-box">
+            <div class="h-toggle"></div>
+            <div class="h-logo-page"></div>
+            <div class="h-logo-name">KẾ TOÁN</div>
+        </div>
+        <div class="h-navbar-box">
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-dashboard-icon"></div>
+                <div class="h-menu-item-text">Tổng quan</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-cash-icon"></div>
+                <div class="h-menu-item-text">Tiền mặt</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-deposit-icon"></div>
+                <div class="h-menu-item-text">Tiền gửi</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-purchases-icon"></div>
+                <div class="h-menu-item-text">Mua hàng</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-sales-icon"></div>
+                <div class="h-menu-item-text">Bán hàng</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-bill-icon"></div>
+                <div class="h-menu-item-text">Quản lý hóa đơn</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-storehouse-icon"></div>
+                <div class="h-menu-item-text">Kho</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-tool-icon"></div>
+                <div class="h-menu-item-text">Công cụ dụng cụ</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-asset-icon"></div>
+                <div class="h-menu-item-text">Tài sản cố định</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-tax-icon"></div>
+                <div class="h-menu-item-text">Thuế</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-cost-icon"></div>
+                <div class="h-menu-item-text">Giá thành</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-synthesise-icon"></div>
+                <div class="h-menu-item-text">Tổng hợp</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-budget-icon"></div>
+                <div class="h-menu-item-text">Ngân sách</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-report-icon"></div>
+                <div class="h-menu-item-text">Báo cáo</div>
+            </div>
+            <div class="h-menu-item">
+                <div class="h-menu-item-icon h-finance-icon"></div>
+                <div class="h-menu-item-text">Phân tích tài chính</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="h-header">
+        <div class="h-header-left">
+            <div class="h-header-left-icon"></div>
+            <div class="h-header-company-name">CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC</div>
+            <div class="h-header-arrow"></div>
+        </div>
+        <div class="h-header-right">
+            <div class="h-header-right-ring"></div>
+            <div class="h-user-avatar"></div>
+            <div class="h-user-name">Phạm Tuấn Hải</div>
+            <div class="h-header-arrow"></div>
+        </div>
+    </div>
+    <div class="h-content">
+        <!-- Header -->
+        <div class="h-content-top">
+            <div class="h-content-text">
+                Nhân viên
+            </div>
+            <button id="btnAddEmloyee" class="h-btn">
+                Thêm mới nhân viên
+            </button>
+        </div>
+        <div class="h-content-center">
+            <!-- Toolbar -->
+            <div class="h-content-toolbar">
+                <input id="Search" type="text" style="width: 25%;" class="h-input h-input-icon" placeholder="Tìm theo mã, tên nhân viên">
+                <div id="refreshData" class="h-toolbar-refresh"></div>
+            </div>
+            <!-- Table -->
+            <div class="grid">
+                <table id="tblEmployee" class="h-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="" class="h-checkbox">
+                            </th>
+                            <th class="text-align-left">MÃ NHÂN VIÊN</th>
+                            <th class="text-align-left">TÊN NHÂN VIÊN</th>
+                            <th class="text-align-left">GIỚI TÍNH</th>
+                            <th class="text-align-center">NGÀY SINH</th>
+                            <th class="text-align-left">SỐ CMND</th>
+                            <th class="text-align-left">CHỨC DANH</th>
+                            <th class="text-align-left">TÊN ĐƠN VỊ</th>
+                            <th class="text-align-left">SỐ TÀI KHOẢN</th>
+                            <th class="text-align-left">TÊN NGÂN HÀNG</th>
+                            <th class="text-align-left">CHI NHÁNH TK NGÂN HÀNG</th>
+                            <th class="text-align-left">CHỨC NĂNG</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="h-table-page">
+                <div class="h-page-left"></div>
+                <div id="cbxPageSize" class="h-page-right">
+                    <select class="h-combobox">
+                        <option value="10">10 nhân viên/trang</option>
+                        <option value="20">20 nhân viên/trang</option>
+                        <option value="30">30 nhân viên/trang</option>
+                        <option value="50">50 nhân viên/trang</option>
+                    </select>
+                    <div class="page-prev">Trước</div>
+                    <div class="h-page-number">
+                        <div class="page-number">1</div>
+                        <div class="page-number">2</div>
+                        <div class="page-number">3</div>
+                    </div>
+                    <div class="page-next">Sau</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Form nhân viên -->
+
+    <div id="dlgPopup" class="popup-bg">
+        <div class="h-popup">
+            <div class="h-popup-header">
+                <div class="popup-header-left">
+                    <div class="popup-header-text">Thông tin nhân viên</div>
+                    <div class="h-popup-customer">
+                        <input type="checkbox" name="" id="">
+                        <label>Là khách hàng</label>
+                    </div>
+                    <div class="popup-supplier">
+                        <input type="checkbox" name="" id="">
+                        <label>Là nhà cung cấp</label>
+                    </div>
+                </div>
+                <div class="popup-header-right">
+                    <div class="h-icon-help"></div>
+                    <div id="btnCloseDialog" class="h-icon-cancel"></div>
+                </div>
+            </div>
+            <div class="h-popup-content">
+                <div class="h-row h-row-flex">
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">Mã
+                                <div class="h-label-warning"> *</div>
+                            </div>
+                            <div class="h-row">
+                                <input id="txtEmployeeCode" type="text" class="h-input">
+                            </div>
+                        </div>
+                        <div class="h-col">
+                            <div class="h-label">Tên
+                                <div class="h-label-warning"> *</div>
+                            </div>
+                            <div class="h-row">
+                                <input id="txtEmployeeName" type="text" class="h-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">Ngày sinh</div>
+                            <div class="h-row">
+                                <input id="dtDateOfBirth" type="date" class="h-input">
+                            </div>
+                        </div>
+                        <div class="h-col">
+                            <div class="h-label">Giới tính</div>
+                            <div id="radioCheck" class="h-row">
+                                <input type="radio" name="gender" id="radio-nam">
+                                <label>Nam</label>
+                                <input type="radio" name="gender" id="radio-nu">
+                                <label>Nữ</label>
+                                <input type="radio" name="gender" id="radio-khac">
+                                <label>Khác</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-row h-row-flex">
+                    <div class="h-row">
+                        <div class="h-col h-col-100 ">
+                            <div class="h-label">Đơn vị
+                                <div class="h-label-warning"> *</div>
+                            </div>
+                            <div id="cbxDepartmentId" class="hcombobox">
+                                <input id="DepartmentName" class="h-combobox" type="text" class="h-combobox-input">
+                                <button class="h-combobox-button"></button>
+                                <div class="h-combobox-data">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">Số CMND</div>
+                            <div class="h-row">
+                                <input id="numIdentityNumber" type="text" class="h-input">
+                            </div>
+                        </div>
+                        <div class="h-col">
+                            <div class="h-label">Ngày cấp</div>
+                            <div class="h-row">
+                                <input id="dtIdentityDate" type="date" class="h-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-row h-row-flex">
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">Chức danh</div>
+                            <div class="h-row">
+                                <input id="txtEmployeePosition" type="text" class="h-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">Nơi cấp</div>
+                            <div class="h-row">
+                                <input id="txtIdentityPlace" type="text" class="h-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-row">
+
+                    <div class="h-label">Địa chỉ</div>
+                    <div class="h-row">
+                        <input id="txtAddress" type="text" class="h-input">
+                    </div>
+
+                </div>
+                <div class="h-row h-row-flex">
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">ĐT di động</div>
+                            <div class="h-row">
+                                <input id="txtPhoneNumber" type="text" class="h-input">
+                            </div>
+                        </div>
+                        <div class="h-col">
+                            <div class="h-label">ĐT cố định</div>
+                            <div class="h-row">
+                                <input type="text" class="h-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">Email</div>
+                            <div class="h-row">
+                                <input id="txtEmail" type="text" class="h-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-row h-row-flex">
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">Tài khoản ngân hàng</div>
+                            <div class="h-row">
+                                <input id="txtBankAccountNumber" type="text" class="h-input">
+                            </div>
+                        </div>
+                        <div class="h-col">
+                            <div class="h-label">Tên ngân hàng</div>
+                            <div class="h-row">
+                                <input id="txtBankName" type="text" class="h-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-row h-row-flex">
+                        <div class="h-col">
+                            <div class="h-label">Chi nhánh</div>
+                            <div class="h-row">
+                                <input id="txtBankBranchName" type="text" class="h-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-popup-footer">
+                <button id="btnCancel" class="h-btn-cancel h-btn-basic">Hủy</button>
+                <div class="h-popup-footer-right">
+                    <button id="btnSave" class="h-btn-save h-btn-basic">Cất</button>
+                    <button id="btnSaveEmployee" class="h-btn-save-add h-btn">Cất và Thêm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup cảnh báo -->
+    <div id="PopupWarning" class="h-popup-msg-warning">
+        <div class="h-popup-warning">
+            <div class="h-popup-msg">
+                <div class="h-msg-icon"></div>
+                <div class="h-msg-text">
+                    Mã nhân viên đã tồn tại trong hệ thống vui lòng kiểm tra lại
+                </div>
+            </div>
+            <div class="h-popup-btn">
+                <button id="btnOK" class="h-btn">
+                Đồng ý
+            </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="PopupWarningDelete" class="h-popup-msg-warning">
+        <div class="h-popup-warning">
+            <div class="h-popup-msg">
+                <div class="h-msg-icon"></div>
+                <div class="h-msg-text">
+                    Bạn có thực sự muốn xóa nhân viên không
+                </div>
+            </div>
+            <div class="h-popup-2btn">
+                <button id="btnCancelDelete" class="h-btn-basic">
+                    Không
+                </button>
+                <button id="btnOKDelete" class="h-btn">
+                    Đồng ý
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading -->
+    <div class="h-loading">
+        <div class="h-loading-icon"></div>
+    </div>
+    <!-- Thư viện JS -->
+    <script type="text/javascript" src="../lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/base/enum.js"></script>
+    <script type="text/javascript" src="../js/base/common.js"></script>
+
+    <script type="text/javascript" src="../lib/combobox/combobox.js"></script>
+    <script type="text/javascript" src="../js/page/employee.js"></script>
+</body>
+
+</html>

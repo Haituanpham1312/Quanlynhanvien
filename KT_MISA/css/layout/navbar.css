@@ -1,0 +1,141 @@
+.h-navbar {
+    float: left;
+    width: 226px;
+    height: 100vh;
+    border-right: 1px solid #bbbbbb;
+    box-sizing: border-box;
+    background-color: rgb(85, 97, 97);
+    padding: 0 16px;
+}
+
+.h-logo-box {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.h-logo-box .h-toggle {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -428px -92px;
+    width: 16px;
+    height: 16px;
+    padding-left: 16px;
+}
+
+.h-logo-box .h-logo-page {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -1232px -1015px;
+    width: 44px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.h-logo-box .h-logo-name {
+    font-size: 16px;
+    font-family: Notosans-Bold;
+}
+
+.h-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 40px;
+    color: #ffffff;
+}
+
+.h-menu-item .h-menu-item-icon {
+    margin-right: 10px;
+    /* font-size: 16px; */
+}
+
+
+/* 15 icon */
+
+.h-dashboard-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -33px -1630px;
+    width: 18px;
+    height: 20px;
+}
+
+.h-cash-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -78px -1631px;
+    width: 14px;
+    height: 18px;
+}
+
+.h-deposit-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -121px -1633px;
+    width: 16px;
+    height: 16px;
+}
+
+.h-purchases-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -165px -1632px;
+    width: 16px;
+    height: 18px;
+}
+
+.h-sales-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -206px -1631px;
+    width: 20px;
+    height: 18px;
+}
+
+.h-bill-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -254px -1632px;
+    width: 14px;
+    height: 17px;
+}
+
+.h-storehouse-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -294px -1632px;
+    width: 18px;
+    height: 17px;
+}
+
+.h-tool-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -339px -1633px;
+    width: 17px;
+    height: 17px;
+}
+
+.h-asset-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -382px -1632px;
+    width: 17px;
+    height: 18px;
+}
+
+.h-tax-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -427px -1634px;
+    width: 16px;
+    height: 16px;
+}
+
+.h-cost-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -471px -1633px;
+    width: 17px;
+    height: 17px;
+}
+
+.h-synthesise-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -514px -1632px;
+    width: 15px;
+    height: 16px;
+}
+
+.h-budget-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -552px -1636px;
+    width: 14px;
+    height: 13px;
+}
+
+.h-report-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -592px -1631px;
+    width: 23px;
+    height: 18px;
+}
+
+.h-finance-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -636px -1631px;
+    width: 19px;
+    height: 18px;
+}

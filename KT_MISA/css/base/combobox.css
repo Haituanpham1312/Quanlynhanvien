@@ -1,0 +1,129 @@
+.h-combobox {
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 40px;
+    outline: unset;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.h-combobox:focus {
+    border-color: #019160;
+}
+
+.hcombobox {
+    display: flex;
+    position: relative;
+}
+
+.hcombobox input {
+    border-radius: 4px;
+    padding: 0 16px;
+    padding-right: 56px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+/* 
+.hcombobox input:focus~button {
+    border-color: #019160;
+    color: #019160;
+} */
+
+.hcombobox button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    border: 0;
+    margin-top: 20px;
+    margin-right: 8px;
+    border-radius: 0 4px 4px 0;
+}
+
+.hcombobox .h-combobox-data {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    width: 100%;
+    box-shadow: 0px 3px 6px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.hcombobox .h-combobox-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+    background-color: #fff;
+}
+
+.hcombobox .h-combobox-item:hover,
+.h-combobox-item-hover {
+    background-color: #BBBBBB !important;
+    cursor: pointer;
+}
+
+
+/* Icon */
+
+.h-combobox-button {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -948px -366px;
+    width: 8px;
+    height: 5px;
+}
+
+
+/* Button Sửa */
+
+.h-combobox-fix {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid #bbb; */
+    cursor: pointer;
+}
+
+.h-fix {
+    display: flex;
+}
+
+.h-fix-text {
+    color: rgb(3, 119, 148);
+}
+
+.h-fix-button {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -178px -364px;
+    width: 12px;
+    height: 8px;
+    margin-left: 5px;
+}
+
+.h-fix-data {
+    position: absolute;
+    top: calc(100% + 1px);
+    width: 250%;
+    display: none;
+    box-shadow: 0px 3px 6px;
+    background-color: #fff;
+    z-index: 1;
+    right: 0;
+}
+
+.h-fix-data .h-fix-data-text {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    background-color: #fff;
+}
+
+.h-fix-data .h-fix-data-text:hover {
+    background-color: #BBBBBB !important;
+    cursor: pointer;
+}

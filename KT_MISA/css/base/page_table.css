@@ -1,0 +1,40 @@
+.h-table-page {
+    position: absolute;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+}
+
+.h-page-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-page-number {
+    display: flex;
+}
+
+.h-page-number .page-number {
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;
+    margin: 4px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.h-page-right .page-prev,
+.h-page-right .page-next {
+    height: 24px;
+    width: auto;
+    text-align: center;
+    line-height: 24px;
+    margin: 0 4px;
+}

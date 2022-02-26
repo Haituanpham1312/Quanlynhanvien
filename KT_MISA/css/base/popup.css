@@ -1,0 +1,76 @@
+.h-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 800px;
+    height: 520px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+}
+
+.h-popup .h-popup-header {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(102, 74, 74); */
+}
+
+.h-popup-header .popup-header-left {
+    /* background-color: #fff; */
+    display: flex;
+}
+
+.h-popup-header .popup-header-right {
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.popup-header-left .popup-header-text {
+    font-family: NotoSans-Bold;
+    font-size: 16px;
+}
+
+
+/* Icon */
+
+.h-icon-help {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -89px -145px;
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+}
+
+.h-icon-cancel {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -147px -147px;
+    width: 18px;
+    height: 18px;
+}
+
+
+/* Footer */
+
+.h-popup-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.h-popup-footer .h-btn-save {
+    margin-right: 10px;
+}
+
+
+/* Background bên ngoài của popup */
+
+.popup-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7, 7, 7, 0.432);
+    z-index: 0;
+}

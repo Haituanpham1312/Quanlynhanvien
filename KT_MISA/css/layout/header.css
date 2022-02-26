@@ -1,0 +1,55 @@
+.h-header {
+    height: 48px;
+    width: calc(100% - 226px);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bbbbbb;
+    justify-content: space-between;
+    /* background-color: bisque; */
+}
+
+.h-header-left,
+.h-header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.h-header-left-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -847px -35px;
+    width: 16px;
+    height: 14px;
+    padding-right: 24px;
+}
+
+
+/* Mũi tên xuống */
+
+.h-header-arrow {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -1078px -38px;
+    width: 9px;
+    height: 6px;
+    margin-left: 10px;
+}
+
+
+/* 
+.h-header-right {
+    display: flex;
+} */
+
+.h-header-right-ring {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -788px -30px;
+    width: 22px;
+    height: 25px;
+    padding-left: 16px;
+}
+
+.h-user-avatar {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -352px -894px;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+}

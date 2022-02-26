@@ -1,0 +1,67 @@
+.h-popup-warning {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    height: 250px;
+    width: 400px;
+    background-color: #fff;
+}
+
+.h-popup-warning .h-popup-msg {
+    margin: 0 50px;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bbb;
+}
+
+.h-popup-warning .h-popup-btn {
+    margin: 0 50px;
+    height: 100px;
+    width: 300px;
+}
+
+.h-popup-2btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    height: 100px;
+    width: 300px;
+    padding-top: 16px;
+}
+
+.h-popup-msg .h-msg-icon {
+    background: url('../../content/img/Sprites.64af8f61.svg') no-repeat -598px -463px;
+    width: 36px;
+    height: 37px;
+    padding-right: 24px;
+    margin-left: 10px;
+}
+
+.h-popup-msg .h-msg-text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.h-popup-warning .h-popup-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+
+/* Background */
+
+.h-popup-msg-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(46, 42, 42, 0.336);
+}

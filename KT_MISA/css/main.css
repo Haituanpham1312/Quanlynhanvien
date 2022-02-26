@@ -1,0 +1,36 @@
+@import url('./common/common.css');
+@import url('./base/button.css');
+@import url('./base/input.css');
+@import url('./base/table.css');
+@import url('./base/popup.css');
+@import url('./base/combobox.css');
+@import url('./base/page_table.css');
+@import url('./base/popup_warning.css');
+@import url('./layout/content.css');
+@import url('./layout/header.css');
+@import url('./layout/navbar.css');
+body {
+    font-family: Notosans-Regular;
+    font-size: 13px;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Notosans-Regular;
+    src: url(../content/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@font-face {
+    font-family: Notosans-Italic;
+    src: url(../content/fonts/notosans-italic.1c1aaac9.woff2);
+}
+
+@font-face {
+    font-family: Notosans-Bold;
+    src: url(../content/fonts/notosans-bold.3ede5aff.woff2);
+}
+
+@font-face {
+    font-family: Notosans-SemiBold;
+    src: url(../content/fonts/notosans-semibold.df3e6dc4.woff2);
+}
